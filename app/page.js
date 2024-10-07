@@ -1,95 +1,144 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+
+import SectionOne from "@/app/includes/SectionOne.js";
+import SectionTwo from "@/app/includes/SectionTwo.js";
+import SectionThree from "@/app/includes/SectionThree.js";
+import SectionFour from "@/app/includes/SectionFour.js";
+import SectionFive from "@/app/includes/SectionFive.js";
+import SectionSix from "@/app/includes/SectionSix.js";
+import SectionSeven from "@/app/includes/SectionSeven.js";
+import SectionEight from "@/app/includes/SectionEight.js";
+import SectionNine from "@/app/includes/SectionNine.js";
+import SectionTen from "@/app/includes/SectionTen.js";
+import SectionEleven from "@/app/includes/SectionEleven.js";
+import SectionThirteen from "@/app/includes/SectionThirteen.js";
+import SectionFourteen from "@/app/includes/SectionFourteen.js";
+import SectionFifteen from "@/app/includes/SectionFifteen.js";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <div>      
+      <section
+        className="hidden-sidebar close-sidebar"
+        style={{ right: "-480px", transform: "matrix(1, 0, 0, 1, 0, 0)" }}
+      >
+        <div className="wrapper-box">
+          <div className="hidden-sidebar-close">
+            <span className="flaticon-remove"></span>
+          </div>
+          <div className="logo">
+            <a >
+              <img src="./images/logo.png" alt="" />
+            </a>
+          </div>
+          <div className="content">
+            <div className="about-widget-two sidebar-widget">
+              <h3>
+                Smart Business Consultancy <br />
+                in New Milton
+              </h3>
+              <div className="text">
+                We denounce with righteous indignation and dislike men who we
+                are to beguiled demoralized by the charms of pleasures that
+                moment, so we blinded desires, that they indignations.
+              </div>
+            </div>
+            <div className="news-widget sidebar-widget">
+              <div className="widget-title">News  Updates</div>
+              <div className="post-wrapper">
+                <div className="image">
+                  <a href="blog-details.html">
+                    <img src="./images/news-1.jpg" alt="" />
+                  </a>
+                </div>
+                <div className="category">Business Plans</div>
+                <h4>
+                  <a href="blog-details.html">
+                    How to Manage Business’s <br />
+                    Online Reputation
+                  </a>
+                </h4>
+              </div>
+              <div className="post-wrapper">
+                <div className="image">
+                  <a href="blog-details.html">
+                    <img src="./images/news-2.jpg" alt="" />
+                  </a>
+                </div>
+                <div className="category">Marketing Strategy</div>
+                <h4>
+                  <a href="blog-details.html">
+                    Inside our Daily Routines as a <br />
+                    Good Consultant
+                  </a>
+                </h4>
+              </div>
+            </div>
+            <div className="newsletter-widget">
+              <div className="widget-title">Newsletter Subscription</div>
+              <form action="#">
+                <input placeholder="Enter Email Address" type="email" />
+                <button className="theme-btn btn-style-one">
+                  <span className="btn-title">Subscribe Us</span>
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+      <div id="search-popup" className="search-popup">
+        <div className="close-search theme-btn">
+          <span className="flaticon-remove"></span>
+        </div>
+        <div className="popup-inner">
+          <div className="overlay-layer"></div>
+          <div className="search-form">
+            <form method="post" action="">
+              <div className="form-group">
+                <fieldset>
+                  <input
+                    className="form-control"
+                    placeholder="Search Here"
+                    required
+                    type="search"
+                    name="search-input"
+                  />
+                  <input className="theme-btn" type="submit" />
+                </fieldset>
+              </div>
+            </form>
+            <br />
+            <h3>Recent Search Keywords</h3>
+            <ul className="recent-searches">
+              <li>
+                <a >Finance</a>
+              </li>
+              <li>
+                <a >Idea</a>
+              </li>
+              <li>
+                <a >Service</a>
+              </li>
+              <li>
+                <a >Growth</a>
+              </li>
+              <li>
+                <a >Plan</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <SectionOne/>
+      <SectionTwo/>
+      <SectionThree/>
+      <SectionFour/>
+      <SectionFive/>
+      <SectionSix/>
+      <SectionSeven/>
+      <SectionEight/>
+      <SectionFourteen/>
+      <SectionFifteen/>
     </div>
   );
 }
