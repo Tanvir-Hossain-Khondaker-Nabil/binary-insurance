@@ -6,9 +6,9 @@ function Footer() {
             <div className="auto-container">
                 <div className="widgets-section">
                     <div className="row clearfix">
-                        <div className="column col-lg-5">
+                        <div className="column col-lg-3">
                             <div className="row">
-                                <div className="col-md-7">
+                                <div className="col-md-12">
                                     <div className="footer-widget logo-widget">
                                         <div className="widget-content">
                                             <div className="footer-logo">
@@ -17,13 +17,17 @@ function Footer() {
                                             <h3>What will <br />be the next step? </h3>
                                             <div className="link-btn">
                                                 <a className="theme-btn custom-bg-color" href="#">
-                                                    <i className="flaticon-right"></i>Experts advice
+                                                    <i className="fa-brands fa-buromobelexperte"></i>Experts advice
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="col-md-5">
+                                </div>                                
+                            </div>
+                        </div>
+                        <div className="column col-lg-9">
+                            <div className="row">
+                                <div className="col-md-4 d-flex justify-content-end">
                                     <div className="footer-widget links-widget">
                                         <h3 className="widget-title">Company</h3>
                                         <div className="widget-content">
@@ -37,11 +41,7 @@ function Footer() {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="column col-lg-4">
-                            <div className="row">
-                                <div className="col-md-6">
+                                <div className="col-md-4 d-flex justify-content-end">
                                     <div className="footer-widget links-widget">
                                         <h3 className="widget-title">Essential</h3>
                                         <div className="widget-content">
@@ -55,7 +55,7 @@ function Footer() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-6">
+                                <div className="col-md-4 d-flex justify-content-end">
                                     <div className="footer-widget links-widget">
                                         <h3 className="widget-title">Support</h3>
                                         <div className="widget-content">
@@ -66,63 +66,6 @@ function Footer() {
                                                 <li><a href="#">Policies</a></li>
                                                 <li><a href="#">Resources</a></li>
                                             </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="column col-lg-3">
-                            <h3 className="widget-title">Projects</h3>
-                            <div className="footer-widget instagram-widget">
-                                <div className="inner-box">
-                                    <div className="wrapper-box">
-                                        <div className="image">
-                                            <img className="lazy-image owl-lazy" src="./images/gallery-6.jpg" alt="" />
-                                            <div className="overlay-link">
-                                                <a className="lightbox-image" data-fancybox="gallery" href="./images/gallery-6.jpg">
-                                                    <span className="fa fa-plus"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div className="image">
-                                            <img className="lazy-image owl-lazy" src="./images/gallery-7.jpg" alt="" />
-                                            <div className="overlay-link">
-                                                <a className="lightbox-image" data-fancybox="gallery" href="./images/gallery-7.jpg">
-                                                    <span className="fa fa-plus"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div className="image">
-                                            <img className="lazy-image owl-lazy" src="./images/gallery-8.jpg" alt="" />
-                                            <div className="overlay-link">
-                                                <a className="lightbox-image" data-fancybox="gallery" href="./images/gallery-8.jpg">
-                                                    <span className="fa fa-plus"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div className="image">
-                                            <img className="lazy-image owl-lazy" src="./images/gallery-9.jpg" alt="" />
-                                            <div className="overlay-link">
-                                                <a className="lightbox-image" data-fancybox="gallery" href="./images/gallery-9.jpg">
-                                                    <span className="fa fa-plus"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div className="image">
-                                            <img className="lazy-image owl-lazy" src="./images/gallery-10.jpg" alt="" />
-                                            <div className="overlay-link">
-                                                <a className="lightbox-image" data-fancybox="gallery" href="./images/gallery-10.jpg">
-                                                    <span className="fa fa-plus"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div className="image">
-                                            <img className="lazy-image owl-lazy" src="./images/gallery-11.jpg" alt="" />
-                                            <div className="overlay-link">
-                                                <a className="lightbox-image" data-fancybox="gallery" href="./images/gallery-11.jpg">
-                                                    <span className="fa fa-plus"></span>
-                                                </a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -139,7 +82,7 @@ function Footer() {
                             <li><a href="#">Terms &amp; Conditions</a></li>
                         </ul>
                         <div className="scroll-to-top-two scroll-to-target" data-target="html">
-                            <i className="flaticon-backward"></i>Get back to home
+                            <i className="fa-solid fa-house"></i>Get back to home
                         </div>
                     </div>
                     <ul className="social-links clearfix">
@@ -148,7 +91,7 @@ function Footer() {
                         <li><a href="#"><span className="fab fa-google-plus-g"></span></a></li>
                         <li><a href="#"><span className="fab fa-skype"></span></a></li>
                     </ul>
-                    <div className="copyright">© 2024 <a href="#">Envolve</a> Consultancy, All Rights Reserved.</div>
+                    <div className="copyright">© 2024 Binary Insuran Consultancy, All Rights Reserved.</div>
                 </div>
             </div>
         </footer>
