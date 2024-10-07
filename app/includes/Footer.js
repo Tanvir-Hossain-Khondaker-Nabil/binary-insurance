@@ -12,7 +12,7 @@ function Footer() {
                                     <div className="footer-widget logo-widget">
                                         <div className="widget-content">
                                             <div className="footer-logo">
-                                                <a href="/"><img src="./images/logo.png" alt="" /></a>
+                                                <a href="/"><img src="./images/logo.png" alt="" className="img-fluid bg-white rounded" /></a>
                                             </div>
                                             <h3>What will <br />be the next step? </h3>
                                             <div className="link-btn">

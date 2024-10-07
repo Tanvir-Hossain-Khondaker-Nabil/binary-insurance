@@ -7,7 +7,7 @@ function SectionTen() {
 
   return (
     <>
-    <section className="pricing-section">
+      <section className="pricing-section">
         <div className="auto-container">
           <div className="sec-title text-center">
             <h2>

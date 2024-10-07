@@ -7,7 +7,7 @@ function SectionEleven() {
 
   return (
     <>
-    <section className="news-section">
+      <section className="news-section">
         <div className="wrapper-box">
           <div
             className="left-column"

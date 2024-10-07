@@ -7,7 +7,7 @@ function SectionSeven() {
 
   return (
     <>
-    <section className="cases-section pb-0">
+      <section className="cases-section pb-0">
         <div
           className="sec-bg"
           style={{

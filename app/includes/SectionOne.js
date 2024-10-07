@@ -36,7 +36,7 @@ function SectionOne() {
   return (
     <>
       {slider_section.length > 0 &&
-        slider_section.every(isDataComplete) ? ( 
+        slider_section.every(isDataComplete) ? (
         slider_section.map((slide, index) => (
           <section className="banner-section style-one" key={slide.id}>
             <div

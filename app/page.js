@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import SectionOne from "@/app/includes/SectionOne.js";
 import SectionTwo from "@/app/includes/SectionTwo.js";
 import SectionThree from "@/app/includes/SectionThree.js";
@@ -8,16 +9,23 @@ import SectionFive from "@/app/includes/SectionFive.js";
 import SectionSix from "@/app/includes/SectionSix.js";
 import SectionSeven from "@/app/includes/SectionSeven.js";
 import SectionEight from "@/app/includes/SectionEight.js";
-import SectionNine from "@/app/includes/SectionNine.js";
-import SectionTen from "@/app/includes/SectionTen.js";
-import SectionEleven from "@/app/includes/SectionEleven.js";
-import SectionThirteen from "@/app/includes/SectionThirteen.js";
 import SectionFourteen from "@/app/includes/SectionFourteen.js";
 import SectionFifteen from "@/app/includes/SectionFifteen.js";
 
 export default function Home() {
+  const [showSectionTwo, setShowSectionTwo] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSectionTwo(true);
+    }, 2000); // 2 seconds delay
+
+    // Cleanup the timer if the component unmounts
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div>      
+    <div>
       <section
         className="hidden-sidebar close-sidebar"
         style={{ right: "-480px", transform: "matrix(1, 0, 0, 1, 0, 0)" }}
@@ -44,7 +52,7 @@ export default function Home() {
               </div>
             </div>
             <div className="news-widget sidebar-widget">
-              <div className="widget-title">News  Updates</div>
+              <div className="widget-title">News Updates</div>
               <div className="post-wrapper">
                 <div className="image">
                   <a href="blog-details.html">
@@ -110,35 +118,26 @@ export default function Home() {
             <br />
             <h3>Recent Search Keywords</h3>
             <ul className="recent-searches">
-              <li>
-                <a >Finance</a>
-              </li>
-              <li>
-                <a >Idea</a>
-              </li>
-              <li>
-                <a >Service</a>
-              </li>
-              <li>
-                <a >Growth</a>
-              </li>
-              <li>
-                <a >Plan</a>
-              </li>
+              <li><a>Finance</a></li>
+              <li><a>Idea</a></li>
+              <li><a>Service</a></li>
+              <li><a>Growth</a></li>
+              <li><a>Plan</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <SectionOne/>
-      <SectionTwo/>
-      <SectionThree/>
-      <SectionFour/>
-      <SectionFive/>
-      <SectionSix/>
-      <SectionSeven/>
-      <SectionEight/>
-      <SectionFourteen/>
-      <SectionFifteen/>
+      
+      <SectionOne />
+      {showSectionTwo && <SectionTwo />}
+      <SectionThree />
+      <SectionFour />
+      <SectionFive />
+      <SectionSix />
+      <SectionSeven />
+      <SectionEight />
+      <SectionFourteen />
+      <SectionFifteen />
     </div>
   );
 }

@@ -7,7 +7,7 @@ function SectionFifteen() {
 
   return (
     <>
-    <section className="feature-section-two">
+      <section className="feature-section-two">
         <div className="auto-container">
           <div className="row">
             <div className="col-lg-6 feature-block-two">

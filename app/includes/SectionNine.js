@@ -7,7 +7,7 @@ function SectionNine() {
 
   return (
     <>
-    <section className="testimonial-section">
+      <section className="testimonial-section">
         <div className="auto-container">
           <div className="testimonial-outer">
             <div className="testimonial-carousel">

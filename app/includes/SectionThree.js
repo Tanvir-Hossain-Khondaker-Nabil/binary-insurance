@@ -19,10 +19,10 @@ function SectionThree() {
     fetchFeatureSection();
   }, []);
 
-  if (!featureSection) return <div>Loading...</div>; // Loader while data is being fetched
+  if (!featureSection) return <div></div>;
 
   const formatImagePath = (path) => {
-    return `${Url}/${path.replace(/\\/g, '/')}`; // Replace backslashes with forward slashes
+    return `${Url}/${path.replace(/\\/g, '/')}`;
   };
 
   return (

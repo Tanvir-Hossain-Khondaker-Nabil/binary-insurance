@@ -3,7 +3,7 @@ import axios from "axios";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination'; 
+import 'swiper/css/pagination';
 import { Navigation } from 'swiper';
 
 function SectionTwo() {

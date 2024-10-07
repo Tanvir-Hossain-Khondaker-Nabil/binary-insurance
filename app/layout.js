@@ -13,6 +13,7 @@ export default function RootLayout({ children }) {
       setLoading(false);
     };
 
+    // Check if document is already fully loaded
     if (document.readyState === "complete") {
       setLoading(false);
     } else {
@@ -28,6 +29,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
+        <title>Binary Insurance</title>
+        <link rel="icon" href="/images/fav.png" type="image/png" />
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -38,7 +42,7 @@ export default function RootLayout({ children }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         />
       </head>
-      <body contentEditable="false">
+      <body>
         {loading ? (
           <div className="loading-spinner" style={spinnerStyle}>
             <div className="spinner-border text-primary" role="status">
@@ -56,12 +60,12 @@ export default function RootLayout({ children }) {
         <script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         ></script>
-        
       </body>
     </html>
   );
 }
 
+// Inline spinner style
 const spinnerStyle = {
   display: "flex",
   justifyContent: "center",
